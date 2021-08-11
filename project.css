@@ -1,0 +1,280 @@
+
+/* navbar section */
+.intro{
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 20;
+}
+
+#logo{
+    height: 5em;
+    width: 20%;
+}
+
+.links{
+    width: 70px;
+    height: 2em;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 20px;
+    padding-top: 6px;
+}
+
+@media(max-width: 600px){
+    .links{
+        width: 30px;
+        height: 1em;
+        display: inline-block;
+        padding: 10px;
+        margin: 2px;
+        margin-top: 30px;
+        text-align: center;
+        border: 1px solid green;
+        border-radius: 10px;
+        padding-top: 4px;
+        font-size: 80%;
+    }
+}
+
+#link{
+    float: right;
+    height: 100%;
+}
+
+.links a{
+    color: green;
+    text-decoration: none;
+}
+
+.links:hover{
+    border-color:rgb(11, 226, 11);
+    box-shadow: 0em 0.5em 0.8em 0.2em #71ee81;
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* home section */
+
+.bgImg{
+    background-image: url("Images/background-layer.png");
+    width: 100%;
+    height: 1000px;
+}
+
+#text{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#text a{
+    color: white;
+}
+
+/* about us section */
+
+#about h1{
+    margin: 0% 20%;
+    margin-top: 1%;
+    color: green;
+    text-align: center;
+}
+
+#about{
+    height: 700px;
+}
+
+.ab{
+    margin: 1% 20%;
+    color: green;
+    text-align: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 0% 20%;
+}
+@media(max-width:365px){
+    .cards{
+        display: block;
+    }
+}
+
+
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-img:hover{
+    border: 0px solid rgb(20, 34, 20);
+    border-radius: 50%;
+    box-shadow: 0em 0.5em 0.8em 0.2em #71ee81;
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: .8s;
+}
+
+/* awards section */
+
+#awards h1{
+    text-align: center;
+    font-size: 2em;
+    color: green;
+}
+#awards img{
+    width: 100%;
+    height: 100%;
+}
+
+.images{
+    display: inline-block;
+    width: 20%;
+    margin: calc(18%/8);
+}
+
+.images:hover{
+    background-color: rgb(229, 245, 229);
+    transition: 1s;
+    border: green;
+    border-radius: 5%;
+}
+
+.position{
+    display: block;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.name{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 0px;
+    color: grey;
+}
+
+/* responsive part */
+
+@media(max-width:1400px){
+    #about{
+        height: 50em;
+    }
+}
+
+@media(max-width:1220px){
+    #about{
+        height: 800px;
+    }
+    .images{
+        display: inline-block;
+        width: 40%;
+        margin: calc(19%/4);
+    }
+}
+@media(max-width:1070px){
+    #about{
+        height: 700px;
+    }
+}
+
+@media(max-width:800px){
+    #about{
+        height: 850px;
+    }
+    .images{
+        display: inline-block;
+        width: 80%;
+        margin: calc(19%/2);
+    }
+}
+
+/* contact section */
+
+#getintouch h1{
+    margin: 0% 20%;
+    margin-top: 1%;
+    color: green;
+    text-align: center;
+    font-size: 2em;
+}
+
+#getintouch{
+    border-top: 1px solid gray;
+    background-color: lightgray;
+    margin-top: 100px;
+    height: 110vh;
+}
+
+.contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contents{
+    border-radius: 5%;
+    height: 70vh;
+    margin: 20px 40px;
+    padding: 20px;
+}
+
+@media(max-width: 365px){
+    .contents{
+        display: block;
+    }
+    #getintouch{
+        height: 1800px;
+    }
+}
+
+/* footer section */
+
+.icon{
+    width: 20px;
+    height: 20px;
+    border: .5px solid green;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.body{
+    position: relative;
+    top: 100px;
+    /*border: 2px solid black;*/
+}
+
+
+.foot{
+    background-color: #139139;
+    height: 80px;
+}
+
+.end{
+    display: inline-block;
+    padding-left: 10%;
+    color: #fff;
+}
+
+.social_media{
+    float: right;
+    padding: 1% 5%;
+}
